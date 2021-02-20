@@ -1,0 +1,20 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: build
+    image: plugins/docker
+    settings:
+      username: kitkit
+      password:
+        from_secret: DOCKER_HUB_PASSWORD
+      context: build
+      dockerfile: build/Dockerfile
+      repo: kitkit/sentinel-dashboard
+      tags:
+        - ${DRONE_TAG}
+        - latest
+trigger:
+  ref:
+    - refs/tags/**
