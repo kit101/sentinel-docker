@@ -2,7 +2,7 @@ version: '3.7'
 services:
   sentinel-dashboard:
     ports:
-      - 8718:8080
+      - 8718:8718
     env_file:
       - ../envs/simple.env
-    image: kit101/sentinel-dashboard
+    image: kitkit/sentinel-dashboard

@@ -1,5 +1,5 @@
 # Alibaba Sentinel Docker Image Build（阿里巴巴分布式系统的流量防卫兵Docker镜像）
-[![Build Status](https://cloud.drone.io/api/badges/kit101/sentinel-docker/status.svg)](https://cloud.drone.io/kit101/sentinel-docker)
+[![Build Status](https://cloud.drone.io/api/badges/kit101/sentinel-docker/status.svg?ref=refs/tags/1.8.1)](https://cloud.drone.io/kit101/sentinel-docker)
 ## Files Tree
 ```bash
 ├── README.md 
