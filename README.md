@@ -14,7 +14,7 @@
 ```bash
 git clone https://github.com/kit101/sentinel-docker
 cd sentinel-docker
-docker build -f build/Dockerfile kit101/sentinel-dashboard .
+docker build -f build/Dockerfile -t kitkit/sentinel-dashboard .
 ```
 ## Usage
 ### docker run
@@ -28,7 +28,13 @@ docker run --name sentinel-dashboard \
 ```
 ### docker-compose up
 ```bash
-git clone https://github.com/kit101/sentinel-docker.gits
+git clone https://github.com/kit101/sentinel-docker.git
 cd sentinel-docker
 docker-compose -f examples/simple-compose.yaml up
 ```
+
+## Other
+
+[Dockerfile](https://github.com/kit101/sentinel-docker)
+
+[Application source code](https://github.com/alibaba/Sentinel)
